@@ -14,22 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('norrison-directo')->get('/ping', function () {
+Route::get('/ping', function () {
     return response()->json(["message" => "start working"]);
 });
-Route::middleware('auth:sanctum')->prefix('norrison-directo')->get('/secureping', function () {
-    return response()->json(["message" => "is working"]);
-});
 
-Route::middleware('auth:sanctum')->prefix('norrison-directo')->get('/secureping', function () {
-    return response()->json(["message" => "is working"]);
-});
+Route::post('/json2csv', [\App\Http\Controllers\WorkerController::class, 'json2csv']);
+Route::post('/csv2json', [\App\Http\Controllers\WorkerController::class, 'csv2json']);
 
-
-Route::middleware('auth:sanctum')
-    ->prefix('norrison-directo')
-    ->get('/stocklevel', [\App\Http\Controllers\WorkerController::class, 'stockLevel']);
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
