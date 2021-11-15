@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<invoices>
+    <invoice
+        ext_unique_id="&lt;!-- length=&gt; 100; UI|! vastavalt seadetele| --&gt;    &lt;!-- if Directo number/code is not used, this is alternative ID; It must be unique for each document and remain same if more than one transaction of the same document is necessary --&gt;"
+        number="&lt;!-- length=&gt; 9; UI|Arve| --&gt;&lt;!-- document number/ID, mandatory; It must be unique for each document and remain same if more than one transaction of the same document is necessary --&gt;"
+        date="2021-10-31 18:13:46" duedate="0000-00-00 00:00:00" transactiondate="2021-10-31 18:13:46"
+        vatzone="&lt;!-- UI|Maa| --&gt;&lt;!-- local = 0, EU = 1, export = 2 --&gt;    &lt;!-- ALT.FROM=&gt; customer &gt; 0 --&gt;"
+        paymentterm="&lt;!-- 32; UI|T-ting| --&gt;    &lt;!-- ALT.FROM=&gt; customer --&gt;    &lt;!-- kui on kasutusel laekumiste loomine, l&#xE4;heb see kood ka laekumise makseviisiks --&gt;"
+        ordernumber="tellimusenr xsd=&gt;int &lt;!-- UI|Tell. nr.| --&gt;" country="Estonia"
+        currency="&lt;!-- 32; UI|Valuuta| --&gt;    &lt;!-- ALT.FROM=&gt; glob.settings &gt; 'EUR' --&gt;"
+        currencyrate="&lt;!-- UI|Kurss| --&gt;    &lt;!-- ALT.FROM=&gt; ECB current published rates --&gt;"
+        customercode="klient_kood&lt;!-- length=&gt; 32; UI|Klient| --&gt; &lt;!-- mandatory by default! --&gt;"
+        customername="Urmas Lipso" orderer_code="klient_tellija&lt;!-- 32; UI| | --&gt;" contact="Urmas Lipso"
+        comment="&lt;!-- 255; UI|Kommentaar| --&gt;" intcomment=" &lt;!-- 255; UI|Sisekommentaar| --&gt;&#10;"
+        salesman="&lt;!-- 30; UI|M&#xFC;&#xFC;giagent| --&gt;    &lt;!-- ALT.FROM=&gt; tr.params &gt; 'XML' --&gt;"
+        customerordernumber="klienditellimus string &lt;!-- 100; UI|Kliendi tell. nr.| --&gt;" email="urmas@lipso.net"
+        address1="Kingu 15" address2="" address3="Saku 75501" phone="56 679 237" deliveryname="Urmas Lipso"
+        deliveryaddress1="Kingu 15" deliveryaddress2="" deliveryaddress3="Saku 75501" vatregno=""
+        datafield1="&lt;!-- 255; UI|Lisav&#xE4;li 1, ! v&#xF5;i vastavalt seadetele| --&gt;"
+        datafield2="&lt;!-- 255; UI|Lisav&#xE4;li 1, ! v&#xF5;i vastavalt seadetele| --&gt;"
+        datafield3="&lt;!-- 255; UI|Lisav&#xE4;li 1, ! v&#xF5;i vastavalt seadetele| --&gt;"
+        status="&lt;!-- 50; UI|Staatus| --&gt;" paymenttotal="194.000000"
+        stock="ladu &lt;!-- 32; UI|Ladu| --&gt;    &lt;!-- ALT.FROM=&gt; tr.params --&gt;"
+        delivery="&lt;!-- UI|L&#xE4;hetusaeg| --&gt;"
+        deliveryterm="&lt;!-- 32; UI|L&#xE4;h. ting.| --&gt;    &lt;!-- ALT.FROM=&gt; customer --&gt;"
+        deliverytermcomment="&lt;!-- 255; UI|L&#xE4;h. ting.| --&gt;" deliverymethod="post24"
+        deliverymethodcomment="Array&#10;(&#10;    [5] =&gt; Array&#10;        (&#10;            [id_eabi_postoffice] =&gt; 134&#10;            [remote_module_id] =&gt; 1&#10;            [remote_module_name] =&gt; post24&#10;            [remote_place_id] =&gt; 96003&#10;            [remote_servicing_place_id] =&gt; &#10;            [name] =&gt; Tallinna Akadeemia Coop Konsumi pakiautomaat&#10;            [city] =&gt; Tallinn&#10;            [county] =&gt; &#10;            [zip_code] =&gt; 96003&#10;            [country] =&gt; EE&#10;            [description] =&gt; Akadeemia tee 35, Tallinn&#10;            [group_id] =&gt; 17&#10;            [group_name] =&gt; Tallinn&#10;            [group_sort] =&gt; 20&#10;            [local_carrier_id] =&gt; &#10;            [created_time] =&gt; 2021-03-21 18:21:01&#10;            [update_time] =&gt; 2021-10-31 17:50:24&#10;            [cached_attributes] =&gt; a:25:{s:3:&quot;ZIP&quot;;s:5:&quot;96003&quot;;s:4:&quot;NAME&quot;;s:44:&quot;Tallinna Akadeemia Coop Konsumi pakiautomaat&quot;;s:4:&quot;TYPE&quot;;s:1:&quot;0&quot;;s:7:&quot;A0_NAME&quot;;s:2:&quot;EE&quot;;s:7:&quot;A1_NAME&quot;;s:13:&quot;Harju maakond&quot;;s:7:&quot;A2_NAME&quot;;s:7:&quot;Tallinn&quot;;s:7:&quot;A3_NAME&quot;;s:0:&quot;&quot;;s:7:&quot;A4_NAME&quot;;s:0:&quot;&quot;;s:7:&quot;A5_NAME&quot;;s:13:&quot;Akadeemia tee&quot;;s:7:&quot;A6_NAME&quot;;s:0:&quot;&quot;;s:7:&quot;A7_NAME&quot;;s:2:&quot;35&quot;;s:7:&quot;A8_NAME&quot;;s:0:&quot;&quot;;s:12:&quot;X_COORDINATE&quot;;s:9:&quot;24.655613&quot;;s:12:&quot;Y_COORDINATE&quot;;s:9:&quot;59.403370&quot;;s:13:&quot;SERVICE_HOURS&quot;;s:0:&quot;&quot;;s:18:&quot;TEMP_SERVICE_HOURS&quot;;s:0:&quot;&quot;;s:24:&quot;TEMP_SERVICE_HOURS_UNTIL&quot;;s:0:&quot;&quot;;s:20:&quot;TEMP_SERVICE_HOURS_2&quot;;s:0:&quot;&quot;;s:26:&quot;TEMP_SERVICE_HOURS_2_UNTIL&quot;;s:0:&quot;&quot;;s:11:&quot;comment_est&quot;;s:0:&quot;&quot;;s:11:&quot;comment_eng&quot;;s:0:&quot;&quot;;s:11:&quot;comment_rus&quot;;s:0:&quot;&quot;;s:11:&quot;comment_lav&quot;;s:0:&quot;&quot;;s:11:&quot;comment_lit&quot;;s:0:&quot;&quot;;s:8:&quot;MODIFIED&quot;;s:29:&quot;2021-09-23T13:09:59.473+03:00&quot;;}&#10;        )&#10;&#10;)&#10;">
+        <rows>
+            <row item="malyn11" description="Malyn kaamelibee&#x17E; meriinovillane kleit - Suurus : M"
+                 price="82.500000" discount="0.000000" quantity="1"
+                 unit="yhik&lt;!-- 32; UI|&#xDC;hik| --&gt;    &lt;!-- ALT.FROM=&gt; item --&gt;" sum="99.000000"
+                 sn="seerianumber&lt;!-- 128; UI|Seerianr| --&gt;" rn="33452" rr="33452"/>
+            <row item="sophia12" description="Sophia hall meriinovillane kleit - Suurus : S" price="79.166667"
+                 discount="0.000000" quantity="1"
+                 unit="yhik&lt;!-- 32; UI|&#xDC;hik| --&gt;    &lt;!-- ALT.FROM=&gt; item --&gt;" sum="95.000000"
+                 sn="seerianumber&lt;!-- 128; UI|Seerianr| --&gt;" rn="33453" rr="33453"/>
+        </rows>
+    </invoice>
+</invoices>

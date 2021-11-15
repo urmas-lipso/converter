@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stocklevels>
+    <stocklevel code="sophie12" stock="str1234" freequantity="12" />
+    <stocklevel code="sophie13" stock="str1234" freequantity="13" />
+</stocklevels>
