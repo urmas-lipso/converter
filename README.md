@@ -8,7 +8,9 @@ This code can be run in three ways:
 ### Running as standalone files
 
 "php json2csv.php input.json output.csv" for converting json file to csv file.
+
 "php json2csv.php input.csv output.json" for converting csv file to json file.
+
 There are some things presumed about csv file:
 * field delimiter is ;
 * text fields are escaped with " (double quotes)
@@ -23,6 +25,7 @@ This small Laravel API shows both cases - classes containing converters are a pa
 Testing it with Postman:
 
 POST https://converter.lipso.net/api/json2csv with JSON data as body, set header Content-Type: application/json to get CSV file contents as body
+
 POST https://converter.lipso.net/api/csv2json with CSV file contents as body, set header Content-Type: text/plain to get JSON as response
 
 ### System requirements and other notes
